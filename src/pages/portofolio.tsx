@@ -2,12 +2,39 @@ import { Button } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PortofolioItem from "@/components/portofolio-item";
 import { Frontend, WordpressProjects, LicenseApp } from "@/projects/project";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
 
 export default function Portofolio() {
-  const [toggle, setToggle] = useState(1);
+  const { section } = useParams<{ section: string }>();
+  const initialToggle = section === 'frontend' ? 1 : section === 'license-app' ? 2 : section === 'wordpress' ? 3 : 1;
+  const [toggle, setToggle] = useState(initialToggle);
+  const navigate = useNavigate();
+  const location = useLocation();
+  console.log(section)
+
+  useEffect(() => {
+    const path = location.pathname.split("/").pop();
+    if (path === "frontend") {
+      setToggle(1);
+    } else if (path === "license-app") {
+      setToggle(2);
+    } else if (path === "wordpress") {
+      setToggle(3);
+    }
+  }, [location]);
+
+  useEffect(() => {
+    if (toggle === 1) {
+      navigate("/portofolio/frontend");
+    } else if (toggle === 2) {
+      navigate("/portofolio/license-app");
+    } else if (toggle === 3) {
+      navigate("/portofolio/wordpress");
+    }
+  }, [toggle, navigate]);
 
   return (
     <DefaultLayout>

@@ -13,21 +13,21 @@ export default function IndexPage() {
       string: "/LearnLight.png",
       name: "LearnLight",
       description: "Frontend",
-      link: "/"
+      link: "/portofolio/frontend"
     },
     {
       logo: "/nutrinooslogo.png",
       string: "/nutrinoosHome.png",
       name: "NutriNOOS",
       description: "Wordpress",
-      link: "/"
+      link: "/portofolio/wordpress"
     },
     {
       logo: "/ideahublogo.png",
       string: "/ideahub.png",
       name: "IdeaHub",
       description: "Tester/Frontend",
-      link: "/"
+      link: "/portofolio/frontend"
     },
   ];
 
