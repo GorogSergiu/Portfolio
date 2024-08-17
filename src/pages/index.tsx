@@ -9,18 +9,21 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 export default function IndexPage() {
   const projectImages = [
     {
+      logo: "/learnlightlogo.png",
       string: "/LearnLight.png",
       name: "LearnLight",
       description: "Frontend",
       link: "/"
     },
     {
+      logo: "/nutrinooslogo.png",
       string: "/nutrinoosHome.png",
       name: "NutriNOOS",
       description: "Wordpress",
       link: "/"
     },
     {
+      logo: "/ideahublogo.png",
       string: "/ideahub.png",
       name: "IdeaHub",
       description: "Tester/Frontend",
@@ -55,7 +58,7 @@ export default function IndexPage() {
         <h3 className="text-[25px] w-[80%] text-left md:text-[70px] font-testTheFuture">Some of my work</h3>
         <div className="container flex w-[80%] flex-col md:flex-row gap-9">
           {projectImages.map((element: any, index: number) => (
-            <HomepageProject key={index} image={element.string} name={element.name} description={element.description} link={element.link} />
+            <HomepageProject key={index} logo={element.logo} image={element.string} name={element.name} description={element.description} link={element.link} />
           ))}
         </div>
       </section>

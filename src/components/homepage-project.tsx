@@ -1,13 +1,14 @@
 import { Card, Link, CardFooter, Image, Button } from "@nextui-org/react";
 
 type HomepageProjectProps = {
+  logo: string,
   image: string;
   name: string;
   description: string;
   link: string;
 };
 
-const HomepageProject: React.FC<HomepageProjectProps> = ({ image, name, description, link }) => {
+const HomepageProject: React.FC<HomepageProjectProps> = ({ logo, image, name, description, link }) => {
   return (
     <Card
       isFooterBlurred
@@ -22,9 +23,9 @@ const HomepageProject: React.FC<HomepageProjectProps> = ({ image, name, descript
       <CardFooter className="absolute w-[60%] z-20 rounded-none right-0 top-0 bottom-0 flex flex-col justify-center items-center gap-4 bg-black/40 p-4">
         <div className="flex flex-grow gap-2 items-center">
           <Image
-            alt="Breathing app icon"
+            alt="Logo"
             className="rounded-full w-10 h-11 bg-black"
-            src="https://nextui.org/images/breathing-app-icon.jpeg"
+            src={logo}
           />
           <div className="flex flex-col">
             <h3 className="text-white/60">{name}</h3>

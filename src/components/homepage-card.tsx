@@ -37,7 +37,7 @@ export default function HomepageCard() {
       </CardHeader>
       <CardBody className="px-3 py-0 text-small text-default-400">
         <p>
-          I am a Front End Developer stacked with a promising skill-set.
+          I am a Frontend Developer stacked with a promising skill-set.
           Dedicated to design, deliver and develop ideas and bring them into a
           digital format. Always up for new challenges that help me increase my
           professional and personal skills.
