@@ -94,7 +94,7 @@ const PortofolioItem: React.FC<PortofolioItemProps> = ({
           </div>
         </div>
       </div>
-      <div className="flex w-[100%] justify-center items-center overflow-visible">
+      <div className="flex w-[100%] md:w-[80%] justify-center items-center overflow-visible">
         {companyName.includes("TheSpots") && (
           <div className="mt-[50px] overflow-x-auto">
             <div className="flex space-x-4 whitespace-nowrap">

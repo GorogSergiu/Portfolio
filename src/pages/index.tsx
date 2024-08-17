@@ -39,7 +39,7 @@ export default function IndexPage() {
             Frontend
           </h2>
           <Button
-            href="/portofolio"
+            href="/portofolio/frontend"
             as={Link}
             radius="full"
             variant="bordered"

@@ -1,7 +1,11 @@
 import { Button } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDownload,
+  faFolder,
+  faFolderOpen,
+} from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import PortofolioItem from "@/components/portofolio-item";
 import { Frontend, WordpressProjects, LicenseApp } from "@/projects/project";
@@ -9,11 +13,18 @@ import { useNavigate, useLocation, useParams } from "react-router-dom";
 
 export default function Portofolio() {
   const { section } = useParams<{ section: string }>();
-  const initialToggle = section === 'frontend' ? 1 : section === 'license-app' ? 2 : section === 'wordpress' ? 3 : 1;
+  const initialToggle =
+    section === "frontend"
+      ? 1
+      : section === "license-app"
+        ? 2
+        : section === "wordpress"
+          ? 3
+          : 1;
   const [toggle, setToggle] = useState(initialToggle);
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(section)
+  console.log(section);
 
   useEffect(() => {
     const path = location.pathname.split("/").pop();
@@ -62,6 +73,10 @@ export default function Portofolio() {
             className="rounded-tr-none rounded-br-none"
           >
             Frontend
+            <FontAwesomeIcon
+              icon={toggle === 1 ? faFolderOpen : faFolder}
+              className="ml-2"
+            />
           </Button>
           <Button
             onPress={() => setToggle(2)}
@@ -70,6 +85,10 @@ export default function Portofolio() {
             className="rounded-none"
           >
             License App
+            <FontAwesomeIcon
+              icon={toggle === 2 ? faFolderOpen : faFolder}
+              className="ml-2"
+            />
           </Button>
           <Button
             onPress={() => setToggle(3)}
@@ -78,6 +97,10 @@ export default function Portofolio() {
             className="rounded-tl-none rounded-bl-none"
           >
             Wordpress
+            <FontAwesomeIcon
+              icon={toggle === 3 ? faFolderOpen : faFolder}
+              className="ml-2"
+            />
           </Button>
         </div>
         <div className="flex flex-col w-[100%] justify-center items-center">
