@@ -53,10 +53,10 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal href={siteConfig.links.linkedin}>
-            <LinkedInIcon className="text-default-500" />
+            <LinkedInIcon />
           </Link>
           <Link isExternal href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
+            <GithubIcon />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
@@ -64,7 +64,7 @@ export const Navbar = () => {
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+          <GithubIcon />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />

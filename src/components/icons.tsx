@@ -25,26 +25,12 @@ export const Logo: React.FC<IconSvgProps> = ({
   </svg>
 );
 
-export const LinkedInIcon: React.FC<IconSvgProps> = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}) => {
-  return (
-    <FontAwesomeIcon icon={faLinkedin} />
-  );
+export const LinkedInIcon = () => {
+  return <FontAwesomeIcon icon={faLinkedin} />;
 };
 
-export const GithubIcon: React.FC<IconSvgProps> = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}) => {
-  return (
-    <FontAwesomeIcon color="#e5e7eb" icon={faGithub} />
-  );
+export const GithubIcon = () => {
+  return <FontAwesomeIcon color="#e5e7eb" icon={faGithub} />;
 };
 
 export const MoonFilledIcon = ({
