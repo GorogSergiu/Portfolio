@@ -1,3 +1,4 @@
+import CustomCursor from "@/components/custom-cursor";
 import { Navbar } from "@/components/navbar";
 
 export default function DefaultLayout({
@@ -9,6 +10,7 @@ export default function DefaultLayout({
 }) {
   return (
     <div className="relative flex flex-col h-screen w-screen">
+      {/* <CustomCursor /> */}
       <Navbar />
       <main
         className={`${styles.container ? "container mx-auto max-w-7xl px-6 flex-grow pt-16" : ""} ${styles.main}`}

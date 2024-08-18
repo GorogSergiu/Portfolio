@@ -13,21 +13,21 @@ export default function IndexPage() {
       string: "/LearnLight.png",
       name: "LearnLight",
       description: "Frontend",
-      link: "/portofolio/frontend"
+      link: "/portofolio/frontend",
     },
     {
       logo: "/nutrinooslogo.png",
       string: "/nutrinoosHome.png",
       name: "NutriNOOS",
       description: "Wordpress",
-      link: "/portofolio/wordpress"
+      link: "/portofolio/wordpress",
     },
     {
       logo: "/ideahublogo.png",
       string: "/ideahub.png",
       name: "IdeaHub",
       description: "Tester/Frontend",
-      link: "/portofolio/frontend"
+      link: "/portofolio/frontend",
     },
   ];
 
@@ -51,14 +51,25 @@ export default function IndexPage() {
         </div>
         <div className="flex flex-col-reverse md:flex-row w-[80%] items-center justify-between">
           <HomepageCard />
-          <h2 className="text-[45px] md:text-[160px] font-testTheFuture mb-6 md:mb-0">Developer</h2>
+          <h2 className="text-[45px] md:text-[160px] font-testTheFuture mb-6 md:mb-0">
+            Developer
+          </h2>
         </div>
       </section>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <h3 className="text-[25px] w-[80%] text-left md:text-[70px] font-testTheFuture">Some of my work</h3>
+        <h3 className="text-[25px] w-[80%] text-left md:text-[70px] font-testTheFuture">
+          Some of my work
+        </h3>
         <div className="container flex w-[80%] flex-col md:flex-row gap-9">
           {projectImages.map((element: any, index: number) => (
-            <HomepageProject key={index} logo={element.logo} image={element.string} name={element.name} description={element.description} link={element.link} />
+            <HomepageProject
+              key={index}
+              logo={element.logo}
+              image={element.string}
+              name={element.name}
+              description={element.description}
+              link={element.link}
+            />
           ))}
         </div>
       </section>
