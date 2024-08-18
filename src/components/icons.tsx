@@ -38,7 +38,7 @@ export const LinkedInIcon = () => {
 };
 
 export const GithubIcon = () => {
-  return <FontAwesomeIcon color="#e5e7eb" icon={faGithub} />;
+  return <FontAwesomeIcon icon={faGithub} />;
 };
 
 export const MoonFilledIcon = ({

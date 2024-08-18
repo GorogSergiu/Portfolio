@@ -14,13 +14,19 @@ export default function Contact() {
   const [emailSent, setEmailSent] = useState(false);
   const [showLoader, setShowLoader] = useState(false);
 
-  const handleSubmit = (e: any) => {
-    setShowLoader(true);
+  const handleSubmit = (e: React.FormEvent) => {
+    setShowLoader(email === "" || firstName=== "" || lastName === "" || message === "" ? false : true);
     e.preventDefault();
 
-    const serviceId = "service_ibdjiun";
-    const templateId = "template_nsywdyv";
-    const publicKey = "e8Yqf9xBykR-nZ2eL";
+    const serviceId = process.env.EMAILJS_SERVICE_ID;
+    const templateId = process.env.EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("Missing EmailJS configuration");
+      setShowLoader(false);
+      return;
+  }
 
     const templateParams = {
       from_email: email,

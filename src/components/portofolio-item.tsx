@@ -26,13 +26,6 @@ const PortofolioItem: React.FC<PortofolioItemProps> = ({
     "/TheSpotsPlaces.png",
     "/TheSpotsSpotPage.png",
     "/TheSpotsUserPage.png",
-    "/TheSpotsHomePage.png",
-    "/TheSpotsHomePage.png",
-    "/TheSpotsHomePage.png",
-    "/TheSpotsUserPage.png",
-    "/TheSpotsUserPage.png",
-    "/TheSpotsUserPage.png",
-    "/TheSpotsUserPage.png",
   ];
   return (
     <>
