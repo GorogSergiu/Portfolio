@@ -42,7 +42,7 @@ export default function IndexPage() {
             href="/portofolio/frontend"
             as={Link}
             radius="full"
-            variant="bordered"
+            variant="ghost"
             className="h-[50px] md:h-[70px] text-[18px] md:text-[30px] w-[150px] md:w-[350px] mb-[20px] md:mb-0"
           >
             Projects

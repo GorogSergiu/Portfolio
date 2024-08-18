@@ -57,7 +57,7 @@ export default function Portofolio() {
           <a href="/GorogSergiuStefan.pdf" download="SergiuGorog.pdf">
             <Button
               radius="full"
-              variant="bordered"
+              variant="ghost"
               className="h-[50px] md:h-[70px] text-[14px] md:text-[30px] w-[150px] md:w-[350px] mb-[20px] md:mb-0"
             >
               Download CV

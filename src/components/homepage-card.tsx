@@ -14,7 +14,13 @@ export default function HomepageCard() {
     <Card className="max-w-[450px] shadow-lg overflow-visible">
       <CardHeader className="justify-between">
         <div className="flex gap-5">
-          <Avatar isBordered radius="full" size="md" src={myProfilePhoto} className="transform hover:scale-[5] transition-transform duration-200" />
+          <Avatar
+            isBordered
+            radius="full"
+            size="md"
+            src={myProfilePhoto}
+            className="transform hover:scale-[5] transition-transform duration-200"
+          />
           <div className="flex flex-col gap-1 items-start justify-center">
             <h4 className="text-small font-semibold leading-none text-default-600">
               Sergiu-Stefan Gorog
@@ -25,12 +31,13 @@ export default function HomepageCard() {
           </div>
         </div>
         <Button
+          className="transform hover:scale-[1.2] transition-transform duration-200"
           href="/contact"
           as={Link}
           color="primary"
           radius="full"
           size="sm"
-          variant="bordered"
+          variant="ghost"
         >
           Hire me
         </Button>
