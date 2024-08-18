@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import PortofolioItem from "@/components/portofolio-item";
-import { Frontend, WordpressProjects, LicenseApp } from "@/projects/project";
+import { Frontend, WordpressProjects, LicenseApp } from "@/items/projects-data";
 import { useNavigate, useLocation, useParams } from "react-router-dom";
 
 export default function Portofolio() {
