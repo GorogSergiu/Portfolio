@@ -1,4 +1,4 @@
-import CustomCursor from "@/components/custom-cursor";
+// import CustomCursor from "@/components/custom-cursor";
 import { Navbar } from "@/components/navbar";
 
 export default function DefaultLayout({
