@@ -65,7 +65,7 @@ export default function Portofolio() {
             </Button>
           </a>
         </div>
-        <div>
+        <div className="flex flex-row items-center justify-center w-[90%]">
           <Button
             onPress={() => setToggle(1)}
             radius="full"
@@ -73,10 +73,7 @@ export default function Portofolio() {
             className="rounded-tr-none rounded-br-none"
           >
             Frontend
-            <FontAwesomeIcon
-              icon={toggle === 1 ? faFolderOpen : faFolder}
-              className="ml-2"
-            />
+            <FontAwesomeIcon icon={toggle === 1 ? faFolderOpen : faFolder} />
           </Button>
           <Button
             onPress={() => setToggle(2)}
@@ -85,10 +82,7 @@ export default function Portofolio() {
             className="rounded-none"
           >
             License App
-            <FontAwesomeIcon
-              icon={toggle === 2 ? faFolderOpen : faFolder}
-              className="ml-2"
-            />
+            <FontAwesomeIcon icon={toggle === 2 ? faFolderOpen : faFolder} />
           </Button>
           <Button
             onPress={() => setToggle(3)}
@@ -97,10 +91,7 @@ export default function Portofolio() {
             className="rounded-tl-none rounded-bl-none"
           >
             Wordpress
-            <FontAwesomeIcon
-              icon={toggle === 3 ? faFolderOpen : faFolder}
-              className="ml-2"
-            />
+            <FontAwesomeIcon icon={toggle === 3 ? faFolderOpen : faFolder} />
           </Button>
         </div>
         <div className="flex flex-col w-[100%] justify-center items-center">
