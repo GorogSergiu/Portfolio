@@ -34,8 +34,8 @@ export default function IndexPage() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center md:gap-4 py-8 md:py-10">
-        <div className="flex flex-col-reverse md:flex-row w-[80%] items-center justify-between">
-          <h2 className="text-[45px] md:text-[160px] font-testTheFuture leading-[1] md:leading-tight">
+        <div className="flex flex-col-reverse md:flex-col-reverse lg:flex-row w-[80%] items-center justify-between">
+          <h2 className="text-[45px] sm:text-[60px] md:text-[80px] lg:text-[100px] xl:text-[150px] font-testTheFuture leading-[1] md:leading-tight">
             Frontend
           </h2>
           <Button
@@ -43,15 +43,15 @@ export default function IndexPage() {
             as={Link}
             radius="full"
             variant="ghost"
-            className="h-[50px] md:h-[70px] text-[18px] md:text-[30px] w-[150px] md:w-[350px] mb-[20px] md:mb-0"
+            className="h-[50px] md:h-[70px] text-[18px] md:text-[30px] min-w-[150px] md:min-w-[350px] mb-[20px] md:mb-0 "
           >
             Projects
             <FontAwesomeIcon icon={faCode} />
           </Button>
         </div>
-        <div className="flex flex-col-reverse md:flex-row w-[80%] items-center justify-between">
+        <div className="flex flex-col-reverse md:flex-col-reverse lg:flex-row w-[80%] items-center justify-between">
           <HomepageCard />
-          <h2 className="text-[45px] md:text-[160px] font-testTheFuture mb-6 md:mb-0">
+          <h2 className="text-[45px] sm:text-[60px] md:text-[80px] lg:text-[100px] xl:text-[150px] font-testTheFuture mb-6 md:mb-0 md:pl-[20px]">
             Developer
           </h2>
         </div>
