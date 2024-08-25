@@ -51,7 +51,7 @@ const PortofolioItem: React.FC<PortofolioItemProps> = ({
                 <Button
                   key={index}
                   isDisabled
-                  color="primary"
+                  color="default"
                   radius="full"
                   variant="bordered"
                   className="opacity-100"
