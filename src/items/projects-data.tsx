@@ -82,8 +82,8 @@ export const WordpressProjects: PortofolioItem[] = [
     jobImage: "/nutrinoosHome.png",
     companyName: "NutriNOOS",
     jobTitle: "Wordpress E-commerce Website",
-    jobLocation: "Romania",
-    jobExperience: "2 weeks",
+    jobLocation: "",
+    jobExperience: "",
     technologies: ["Wordpress", "Woocomerce"],
     responsabilities: [
       "Designed and developed a custom WordPress website, utilizing themes and plugins to create a responsive, user-friendly experience.",

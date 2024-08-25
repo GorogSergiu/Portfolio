@@ -8,6 +8,7 @@ import {
   Link,
 } from "@nextui-org/react";
 import myProfilePhoto from "/Avatar.png";
+import { TypeAnimation } from "react-type-animation";
 
 export default function HomepageCard() {
   return (
@@ -43,12 +44,13 @@ export default function HomepageCard() {
         </Button>
       </CardHeader>
       <CardBody className="px-3 py-0 text-small text-default-400">
-        <p>
-          I am a Frontend Developer stacked with a promising skill-set.
-          Dedicated to design, deliver and develop ideas and bring them into a
-          digital format. Always up for new challenges that help me increase my
-          professional and personal skills.
-        </p>
+        <TypeAnimation
+          sequence={[
+            "I am a Frontend Developer stacked with a promising skill-set. Dedicated to design, deliver and develop ideas and bring them into a digital format. Always up for new challenges that help me increase my professional and personal skills.",
+          ]}
+          wrapper="span"
+          cursor={false}
+        />
         <span className="pt-2">
           #FrontendWithSergiu
           <span className="py-2" aria-label="computer" role="img">

@@ -54,7 +54,7 @@ export default function Portofolio() {
           <h2 className="text-[35px] md:text-[90px] font-testTheFuture leading-[1] md:leading-tight">
             All of my work
           </h2>
-          <a href="/GorogSergiuStefan.pdf" download="SergiuGorog.pdf">
+          <a href="/GorogSergiuStefanCV.pdf" download="SergiuGorog.pdf">
             <Button
               radius="full"
               variant="ghost"

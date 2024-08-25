@@ -27,6 +27,7 @@ const PortofolioItem: React.FC<PortofolioItemProps> = ({
     "/TheSpotsSpotPage.png",
     "/TheSpotsUserPage.png",
   ];
+  const allKeys = responsabilities.map((_, index) => index.toString());
   return (
     <>
       <div className="flex justify-center items-center mt-[30px] md:mt-[100px]">
@@ -38,18 +39,22 @@ const PortofolioItem: React.FC<PortofolioItemProps> = ({
           )}
           <div>
             <h2 className="text-[25px] md:text-[30px] text-left">
-              ../{companyName}/{jobTitle}
+              ../{companyName} - {jobTitle}
             </h2>
-            <h3>
-              ../{jobLocation}/{jobExperience}
-            </h3>
+            {jobLocation !== "" && (
+              <h3>
+                ../{jobLocation} - {jobExperience}
+              </h3>
+            )}
             <div className="flex flex-wrap mt-[30px] mb-[30px] gap-2">
               {technologies.map((technology: string, index: number) => (
                 <Button
                   key={index}
-                  color="default"
+                  isDisabled
+                  color="primary"
                   radius="full"
                   variant="bordered"
+                  className="opacity-100"
                 >
                   {technology}
                 </Button>
@@ -58,13 +63,19 @@ const PortofolioItem: React.FC<PortofolioItemProps> = ({
             <div className="flex flex-col gap-2">
               <div className="text-left border-small px-1 py-2 rounded-small border-default-200 dark:border-default-100">
                 <Listbox
+                  disabledKeys={allKeys}
+                  tabIndex={-1}
                   aria-label="Multiple selection example"
                   variant="flat"
                   disallowEmptySelection
                 >
                   {responsabilities.map(
                     (responsability: string, index: number) => (
-                      <ListboxItem key={index} className="flex items-center">
+                      <ListboxItem
+                        tabIndex={-1}
+                        key={index}
+                        className="flex items-center opacity-100"
+                      >
                         <FontAwesomeIcon
                           icon={
                             responsability.includes(
