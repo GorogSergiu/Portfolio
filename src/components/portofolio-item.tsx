@@ -43,7 +43,8 @@ const PortofolioItem: React.FC<PortofolioItemProps> = ({
             </h2>
             {jobLocation !== "" && (
               <h3>
-                ../{jobLocation} - {jobExperience}
+                ../{jobLocation}
+                {jobExperience && ` - ${jobExperience}`}
               </h3>
             )}
             <div className="flex flex-wrap mt-[30px] mb-[30px] gap-2">

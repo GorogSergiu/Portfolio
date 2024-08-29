@@ -80,9 +80,9 @@ export const LicenseApp: PortofolioItem[] = [
 export const WordpressProjects: PortofolioItem[] = [
   {
     jobImage: "/nutrinoosHome.png",
-    companyName: "NutriNOOS",
-    jobTitle: "Wordpress E-commerce Website",
-    jobLocation: "",
+    companyName: "nutriNOOS",
+    jobTitle: "Co-founder | Website Developer",
+    jobLocation: "health & wellness online store",
     jobExperience: "",
     technologies: ["Wordpress", "Woocomerce"],
     responsabilities: [
