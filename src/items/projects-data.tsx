@@ -28,7 +28,7 @@ export const Frontend: PortofolioItem[] = [
     companyName: "Ideahub",
     jobTitle: "Junior Tester/Junior Frontend Developer",
     jobLocation: "Timisoara, Romania",
-    jobExperience: "1 yr 1 mos/6 mos (On-site)",
+    jobExperience: "5 mos/1 yr (On-site)",
     technologies: ["React", "JavaScript", "HTML5", "CSS", "jquery"],
     responsabilities: [
       "As a Junior Frontend Developer:",
