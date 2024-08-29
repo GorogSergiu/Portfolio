@@ -9,7 +9,7 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Portofolio",
+      label: "Portfolio",
       href: "/portofolio/frontend",
     },
     {
