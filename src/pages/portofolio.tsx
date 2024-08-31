@@ -39,11 +39,11 @@ export default function Portofolio() {
 
   useEffect(() => {
     if (toggle === 1) {
-      navigate("/portofolio/frontend");
+      navigate("/portfolio/frontend");
     } else if (toggle === 2) {
-      navigate("/portofolio/license-app");
+      navigate("/portfolio/license-app");
     } else if (toggle === 3) {
-      navigate("/portofolio/wordpress");
+      navigate("/portfolio/wordpress");
     }
   }, [toggle, navigate]);
 

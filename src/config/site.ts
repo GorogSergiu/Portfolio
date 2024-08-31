@@ -10,7 +10,7 @@ export const siteConfig = {
     },
     {
       label: "Portfolio",
-      href: "/portofolio/frontend",
+      href: "/portfolio/frontend",
     },
     {
       label: "Contact",

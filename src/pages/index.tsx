@@ -13,21 +13,21 @@ export default function IndexPage() {
       string: "/LearnLight.png",
       name: "LearnLight",
       description: "Frontend",
-      link: "/portofolio/frontend",
+      link: "/portfolio/frontend",
     },
     {
       logo: "/nutrinooslogo.png",
       string: "/nutrinoosHome.png",
       name: "NutriNOOS",
       description: "Wordpress",
-      link: "/portofolio/wordpress",
+      link: "/portfolio/wordpress",
     },
     {
       logo: "/ideahublogo.png",
       string: "/ideahub.png",
       name: "IdeaHub",
       description: "Tester/Frontend",
-      link: "/portofolio/frontend",
+      link: "/portfolio/frontend",
     },
   ];
 
@@ -39,7 +39,7 @@ export default function IndexPage() {
             Frontend
           </h2>
           <Button
-            href="/portofolio/frontend"
+            href="/portfolio/frontend"
             as={Link}
             radius="full"
             variant="ghost"
