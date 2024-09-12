@@ -1,5 +1,6 @@
 // import CustomCursor from "@/components/custom-cursor";
 import { Navbar } from "@/components/navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function DefaultLayout({
   children,
@@ -22,6 +23,7 @@ export default function DefaultLayout({
           © 2024 sergiugorog.com
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
